@@ -1,0 +1,127 @@
+---
+pagetitle: Random sampling and sampling distributions
+output: 
+  revealjs::revealjs_presentation:
+    incremental: false
+    theme: solarized
+    self_contained: false
+    # reveal_plugins: ["menu","notes","chalkboard"]
+    reveal_plugins: ["menu"]
+    highlight: pygments
+    center: true
+    transition: none
+    background_transition: none 
+    reveal_options:
+      # chalkboard:
+      #   theme: whiteboard
+      #   toggleNotesButton: true
+      #   toggleChalkboardButton: true
+      menu:
+        numbers: true
+      slideNumber: true
+      previewLinks: false
+    fig_caption: true
+    css: mystyle.css
+    
+--- 
+
+<section>
+
+<h1>Random sampling and sampling distributions</h1>
+
+Based on Stock and Watson, ch. 3
+
+<br>
+
+<h2>[Jesper Bagger](mailto:jesper.bagger@rhul.ac.uk)</h2>
+
+<h3>EC2203 | Royal Holloway | 2020/21</h3>
+
+</section>
+
+<!-- ## Statistics -->
+
+<!-- - Probability theory provide us with concepts that allow us to describe and analyze situations involving randomness -->
+
+<!--   For example, the mean and variance of a random variable -->
+
+<!-- - Probability theory does not tell us how to **quantify**, say, the mean and variance of a random variable. -->
+
+<!--   For that, we need statistics  -->
+
+# Random sampling
+
+## Population and sample
+
+- The **population** is the entire pool from which a statistical sample is drawn (people, firms, objects, events, etc.)
+
+- The **sample** is a subset of the population
+
+- Statistics and econometrics deal with what we can learn about the population from a sample
+
+## Simple random sampling
+
+- Sample $n$ objects selected **at random** from a population
+
+- Each population-member is **equally likely to be included**
+
+- Denote the size-$n$ sample by
+
+  $$\{Y_i; i=1,...,n\}$$
+
+## A random sample
+
+- The sample $\{Y_i; i=1,...,n\}$ is obtained by sampling $Y$, a **single** random variable,  **$n$ times**
+
+- A different sample obtains if we redo sampling: treat the sample as a **collection of $n$ random variables**
+
+<!-- - The adjective **random** in "random sample" refers to the way the sample is obtained, not the realized sample -->
+
+## i.i.d. sample
+
+- Because $\{Y_i; i=1,...,n\}$ is drawn at random from the same population, the $Y_i$'s are **identically distributed**
+
+  $$f_{Y_i}(y) = f_{Y}(y); \quad i=1,2,...,n$$ 
+  
+- Under simple random sampling, the $Y_i$'s are **independent**: knowning $Y_i$ provides no information on $Y_j$ for $j \neq i$
+
+- We say that simple random sampling produces an **independently and identically distributed (i.i.d.) sample**
+
+# Sampling distributions
+
+## The sample average and its distribution
+
+<!-- - All the econometric procedures we consider in EC2203 involves taking (weighted) averages of sampled data -->
+
+- The **simple sample average** is
+
+  $$\overline{Y} = \frac{1}{n}\sum_{i=1}^n Y_i$$
+
+- Because $\{Y_i; i=1,...,n\}$ is a collection of random variables, $\overline{Y}$ is also a random variable
+
+- The distribution of $\overline{Y}$, induced by random sampling, is denoted the **sampling distribution**
+
+## The mean and variance of the sample average
+
+<div class="box">
+Let $\{Y_i; i=1,2,...,n\}$ be an i.i.d. sample, and consider the sample average $\overline{Y} = \frac{1}{n}\sum_{i=1}^n Y_i$. Then,
+
+$$\mathrm{E}(\overline{Y}) = \mu_Y; \quad \mathrm{var}(\overline{Y}) = \frac{1}{n}\sigma^2_Y$$
+
+We sometimes denote $\mathrm{var}(\overline{Y})$ by $\sigma^2_\overline{Y}$.
+
+</div>
+
+
+
+# Summary
+
+- Random sampling
+
+  - Sample viewed as a collection of random variables
+
+  - Simple random sampling produces an i.i.d. sample 
+
+- Sampling distributions
+
+  - Random sampling induces a probability distribution on any statistics computed on the sample

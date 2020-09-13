@@ -1,0 +1,52 @@
+body {
+  background: #fff;
+  background-color: #fff; }
+  
+.reveal .box {
+  border-radius: 25px;
+  display: block;
+  position: relative;
+  max-width: 100%;
+  margin: 20px auto;
+  text-align: left;
+  font-family: "Lato";
+  line-height: 1.2em;
+  word-wrap: break-word;
+  padding: 25px;
+  background: rgba(211, 211, 211, 0.50);
+  }
+  
+blockquote {
+    font-family: Georgia, serif;
+    position: relative;
+    margin: 0.5em;
+    padding: 0.5em 2em 0.5em 3em;
+}
+/* Thanks: http://callmenick.com/post/styling-blockquotes-with-css-pseudo-classes */
+blockquote:before {
+    font-family: Georgia, serif;
+    position: absolute;
+    font-size: 6em;
+    line-height: 1;
+    top: 0;
+    left: 0;
+    content: "\201C";
+}
+blockquote:after {
+    font-family: Georgia, serif;
+    position: absolute;
+   /* display: block; don't use this, it raised the quote too high from the bottom - defeated line-height? */
+    float:right;
+    font-size:6em;
+    line-height: 1;
+    right:0;
+    bottom:-0.5em;
+    content: "\201D";
+}
+blockquote footer {
+    padding: 0 2em 0 0;
+    text-align:right;
+}
+blockquote cite:before {
+    content: "\2013";
+}
