@@ -113,7 +113,11 @@ Based on Stock and Watson, ch. 3
 ## The mean and variance of the sample average
 
 <div class="box">
-Let $\{Y_i; i=1,...,n\}$ be an i.i.d. sample, and consider the sample average $\overline{Y} = \frac{1}{n}\sum_{i=1}^n Y_i$. Then,
+Let $\{Y_i; i=1,...,n\}$ be an i.i.d. sample of $Y$ with 
+
+$$\mathrm{E}(Y)=\mu_Y; \quad \mathrm{var}(Y) = \sigma^2_Y,$$
+
+and consider the sample average $\overline{Y} = \frac{1}{n}\sum_{i=1}^n Y_i$. Then,
 
 $$\mathrm{E}(\overline{Y}) = \mu_Y; \quad \mathrm{var}(\overline{Y}) = \frac{1}{n}\sigma^2_Y$$
 
@@ -124,6 +128,8 @@ We sometimes denote $\mathrm{var}(\overline{Y})$ by $\sigma^2_\overline{Y}$.
 
 
 # Summary
+
+## Summary
 
 - Random sampling
 
