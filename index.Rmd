@@ -69,7 +69,7 @@ Based on Stock and Watson, ch. 3
 
   For example, $Y$ could represent the eventual EC2203 mark
 
-- Sample $n$ objects (e.g. EC2204 students) selected **at random** from the population (e.g all EC2203 students); 
+- Sample $n$ objects (e.g. EC2203 students) selected **at random** from the population (e.g all EC2203 students); 
 
   then, record the value of $Y$ for each member of the sample (i.e. the EC2203 mark for each sampled student)
 
