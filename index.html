@@ -475,32 +475,25 @@ EC2203 | Royal Holloway | 2020/21
 <section><section id="random-sampling" class="title-slide slide level1"><h1>Random sampling</h1></section><section id="population-and-sample" class="slide level2">
 <h2>Population and sample</h2>
 <ul>
-<li><p>The <strong>population</strong> is the entire pool from which a statistical sample is drawn (people, firms, objects, events, etc.)</p>
-<p>For example, all EC2203 students if we are interested in learning about the distribution of EC2203 marks</p></li>
-<li><p>The <strong>sample</strong> is a subset of the population</p>
-<p>For example, 20 of the EC2203 students in the population</p></li>
+<li><p>The <strong>population</strong> is the entire pool from which a statistical sample is drawn (people, firms, objects, events, etc.)</p></li>
+<li><p>The <strong>sample</strong> is a subset of the population</p></li>
 <li><p>Statistics and econometrics deal with what we can learn about the population from a sample</p></li>
 </ul>
 </section><section id="simple-random-sampling" class="slide level2">
 <h2>Simple random sampling</h2>
 <ul>
-<li><p>Suppose we are interested in the random variable <span class="math inline">\(Y\)</span> with distribution <span class="math inline">\(f_Y(y)\)</span></p>
-<p>For example, <span class="math inline">\(Y\)</span> could represent the eventual EC2203 mark</p></li>
-<li><p>Sample <span class="math inline">\(n\)</span> objects (e.g. EC2203 students) selected <strong>at random</strong> from the population (e.g all EC2203 students);</p>
-<p>then, record the value of <span class="math inline">\(Y\)</span> for each member of the sample (i.e. the EC2203 mark for each sampled student)</p>
-<p><span class="math display">\[\{Y_i; i=1,...,n\}\]</span></p></li>
-<li><p>Random sampling means that each population-member is <strong>equally likely to be included</strong></p></li>
+<li><p>Sample <span class="math inline">\(n\)</span> objects selected <strong>at random</strong> from a population</p></li>
+<li><p>Each population-member is <strong>equally likely to be included</strong></p></li>
+<li><p>The size-<span class="math inline">\(n\)</span> sample is <span class="math inline">\(\{Y_i; i=1,...,n\}\)</span></p></li>
 </ul>
-</section><section id="a-random-sample" class="slide level2">
-<h2>A random sample</h2>
-<ul>
-<li><p>The sample <span class="math inline">\(\{Y_i; i=1,...,n\}\)</span> is obtained by sampling <span class="math inline">\(Y\)</span>, a <strong>single</strong> random variable, <strong><span class="math inline">\(n\)</span> times</strong></p></li>
-<li><p>A different set of <span class="math inline">\(Y\)</span>-values will be recorded if we redo the random sampling: useful to treat the sample as a <strong>collection of <span class="math inline">\(n\)</span> random variables</strong></p></li>
-</ul>
-<!-- - The adjective **random** in "random sample" refers to the way the sample is obtained, not the realized sample -->
+<!-- ## A random sample -->
+<!-- - The sample $\{Y_i; i=1,...,n\}$ is obtained by sampling $Y$, a **single** random variable,  **$n$ times** -->
+<!-- - A different sample obtains if we redo sampling: treat the sample as a **collection of $n$ random variables** -->
+<!-- <!-- - The adjective **random** in "random sample" refers to the way the sample is obtained, not the realized sample -->
 </section><section id="i.i.d.-sample" class="slide level2">
 <h2>i.i.d. sample</h2>
 <ul>
+<li><p>Simple random sampling means that <span class="math inline">\(\{Y_i; i=1,...,n\}\)</span> should be treated as a <strong>collection of <span class="math inline">\(n\)</span> random variables</strong></p></li>
 <li><p>Because <span class="math inline">\(\{Y_i; i=1,...,n\}\)</span> is drawn at random from the same population, the <span class="math inline">\(Y_i\)</span>’s are <strong>identically distributed</strong></p>
 <p><span class="math display">\[f_{Y_i}(y) = f_{Y}(y); \quad i=1,2,...,n\]</span></p></li>
 <li><p>Under simple random sampling, the <span class="math inline">\(Y_i\)</span>’s are <strong>independent</strong>: knowning <span class="math inline">\(Y_i\)</span> provides no information on <span class="math inline">\(Y_j\)</span> for <span class="math inline">\(j \neq i\)</span></p></li>
@@ -519,27 +512,18 @@ EC2203 | Royal Holloway | 2020/21
 </section><section id="the-mean-and-variance-of-the-sample-average" class="slide level2">
 <h2>The mean and variance of the sample average</h2>
 <div class="box">
-<p>Let <span class="math inline">\(\{Y_i; i=1,...,n\}\)</span> be an i.i.d. sample of <span class="math inline">\(Y\)</span> with</p>
-<p><span class="math display">\[\mathrm{E}(Y)=\mu_Y; \quad \mathrm{var}(Y) = \sigma^2_Y,\]</span></p>
-<p>and consider the sample average <span class="math inline">\(\overline{Y} = \frac{1}{n}\sum_{i=1}^n Y_i\)</span>. Then,</p>
+<p>Let <span class="math inline">\(\{Y_i; i=1,2,...,n\}\)</span> be an i.i.d. sample with</p>
+<p><span class="math display">\[\mathrm{E}(Y)=\mu_Y; \quad \mathrm{var}(Y)=\sigma_Y^2,\]</span> and consider the sample average <span class="math inline">\(\overline{Y} = \frac{1}{n}\sum_{i=1}^n Y_i\)</span>. Then,</p>
 <p><span class="math display">\[\mathrm{E}(\overline{Y}) = \mu_Y; \quad \mathrm{var}(\overline{Y}) = \frac{1}{n}\sigma^2_Y\]</span></p>
 <p>We sometimes denote <span class="math inline">\(\mathrm{var}(\overline{Y})\)</span> by <span class="math inline">\(\sigma^2_\overline{Y}\)</span>.</p>
 </div>
 </section></section>
-<section><section id="summary" class="title-slide slide level1"><h1>Summary</h1></section><section id="summary-1" class="slide level2">
-<h2>Summary</h2>
-<ul>
-<li><p>Random sampling</p>
-<ul>
-<li><p>Sample viewed as a collection of random variables</p></li>
+<section id="summary" class="title-slide slide level1"><h1>Summary</h1><ul>
+<li><p>Random sampling means that each population-member is equally likely to be included in the sample</p></li>
+<li><p>A sample should be viewed as a collection of random variables when we think about econometric analysis and econometric techniques</p></li>
 <li><p>Simple random sampling produces an i.i.d. sample</p></li>
-</ul></li>
-<li><p>Sampling distributions</p>
-<ul>
-<li>Random sampling induces a probability distribution on any statistics computed on the sample</li>
-</ul></li>
-</ul>
-</section></section>
+<li><p>Random sampling induces a probability distribution on any statistics computed on the sample, e.g. the average.</p></li>
+</ul></section>
     </div>
   </div>
 

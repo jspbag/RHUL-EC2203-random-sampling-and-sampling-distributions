@@ -55,38 +55,29 @@ Based on Stock and Watson, ch. 3
 
 - The **population** is the entire pool from which a statistical sample is drawn (people, firms, objects, events, etc.)
 
-  For example, all EC2203 students if we are interested in learning about the distribution of EC2203 marks
-
 - The **sample** is a subset of the population
-
-  For example, 20 of the EC2203 students in the population
 
 - Statistics and econometrics deal with what we can learn about the population from a sample
 
 ## Simple random sampling
 
-- Suppose we are interested in the random variable $Y$ with distribution $f_Y(y)$
+- Sample $n$ objects selected **at random** from a population
 
-  For example, $Y$ could represent the eventual EC2203 mark
+- Each population-member is **equally likely to be included**
 
-- Sample $n$ objects (e.g. EC2203 students) selected **at random** from the population (e.g all EC2203 students); 
+- The size-$n$ sample is $\{Y_i; i=1,...,n\}$
 
-  then, record the value of $Y$ for each member of the sample (i.e. the EC2203 mark for each sampled student)
+<!-- ## A random sample -->
 
-  $$\{Y_i; i=1,...,n\}$$
+<!-- - The sample $\{Y_i; i=1,...,n\}$ is obtained by sampling $Y$, a **single** random variable,  **$n$ times** -->
 
-- Random sampling means that each population-member is **equally likely to be included**
+<!-- - A different sample obtains if we redo sampling: treat the sample as a **collection of $n$ random variables** -->
 
-
-## A random sample
-
-- The sample $\{Y_i; i=1,...,n\}$ is obtained by sampling $Y$, a **single** random variable,  **$n$ times**
-
-- A different set of $Y$-values will be recorded if we redo the random sampling: useful to treat the sample as a **collection of $n$ random variables**
-
-<!-- - The adjective **random** in "random sample" refers to the way the sample is obtained, not the realized sample -->
+<!-- <!-- - The adjective **random** in "random sample" refers to the way the sample is obtained, not the realized sample -->
 
 ## i.i.d. sample
+
+- Simple random sampling means that $\{Y_i; i=1,...,n\}$ should be treated as a **collection of $n$ random variables**
 
 - Because $\{Y_i; i=1,...,n\}$ is drawn at random from the same population, the $Y_i$'s are **identically distributed**
 
@@ -113,10 +104,9 @@ Based on Stock and Watson, ch. 3
 ## The mean and variance of the sample average
 
 <div class="box">
-Let $\{Y_i; i=1,...,n\}$ be an i.i.d. sample of $Y$ with 
+Let $\{Y_i; i=1,2,...,n\}$ be an i.i.d. sample with
 
-$$\mathrm{E}(Y)=\mu_Y; \quad \mathrm{var}(Y) = \sigma^2_Y,$$
-
+$$\mathrm{E}(Y)=\mu_Y; \quad \mathrm{var}(Y)=\sigma_Y^2,$$
 and consider the sample average $\overline{Y} = \frac{1}{n}\sum_{i=1}^n Y_i$. Then,
 
 $$\mathrm{E}(\overline{Y}) = \mu_Y; \quad \mathrm{var}(\overline{Y}) = \frac{1}{n}\sigma^2_Y$$
@@ -129,14 +119,10 @@ We sometimes denote $\mathrm{var}(\overline{Y})$ by $\sigma^2_\overline{Y}$.
 
 # Summary
 
-## Summary
+- Random sampling means that each population-member is equally likely to be included in the sample
 
-- Random sampling
+- A sample should be viewed as a collection of random variables when we think about econometric analysis and econometric techniques
 
-  - Sample viewed as a collection of random variables
+- Simple random sampling produces an i.i.d. sample 
 
-  - Simple random sampling produces an i.i.d. sample 
-
-- Sampling distributions
-
-  - Random sampling induces a probability distribution on any statistics computed on the sample
+- Random sampling induces a probability distribution on any statistics computed on the sample, e.g. the average.
