@@ -119,6 +119,8 @@ We sometimes denote $\mathrm{var}(\overline{Y})$ by $\sigma^2_\overline{Y}$.
 
 # Summary
 
+## Summary
+
 - Random sampling means that each population-member is equally likely to be included in the sample
 
 - A sample should be viewed as a collection of random variables when we think about econometric analysis and econometric techniques
