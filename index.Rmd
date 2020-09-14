@@ -61,11 +61,13 @@ Based on Stock and Watson, ch. 3
 
 ## Simple random sampling
 
+- Suppose we are interested in the random variable $Y$ in some population. 
+
 - Sample $n$ objects selected **at random** from a population
 
 - Each population-member is **equally likely to be included**
 
-- The size-$n$ sample is $\{Y_i; i=1,...,n\}$
+- Record $Y$ for each member of the sample. The size-$n$ sample is $\{Y_i; i=1,...,n\}$
 
 <!-- ## A random sample -->
 
